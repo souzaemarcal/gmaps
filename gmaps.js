@@ -14,7 +14,7 @@
 }(this, function() {
 
 /*!
- * GMaps.js v0.4.25
+ * GMaps.js v0.4.26
  * http://hpneo.github.com/gmaps/
  *
  * Copyright 2017, Gustavo Leon
@@ -224,6 +224,7 @@ var GMaps = (function(global) {
         scaleControl = valueOrDefault(options.scaleControl, true),
         streetViewControl = valueOrDefault(options.streetViewControl, true),
         overviewMapControl = valueOrDefault(overviewMapControl, true),
+        fullscreenControl = valueOrDefault(options.fullscreenControl, true),
         map_options = {},
         map_base_options = {
           zoom: this.zoom,
@@ -240,7 +241,8 @@ var GMaps = (function(global) {
           mapTypeControl: mapTypeControl,
           scaleControl: scaleControl,
           streetViewControl: streetViewControl,
-          overviewMapControl: overviewMapControl
+          overviewMapControl: overviewMapControl,
+          fullscreenControl: fullscreenControl
         };
 
       if (typeof(options.el) === 'string' || typeof(options.div) === 'string') {
